@@ -3,6 +3,7 @@ import 'devextreme/dist/css/dx.light.css';
 import Stack from '@mui/material/Stack';
 import Sidebar from './components/Sidebar';
 import MainComponent from './components/MainComponent';
+import DmsDocModal from './components/DmsDocModal';
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
           <Sidebar width="30%"/>
           <MainComponent />
       </Stack>
-      
+      <DmsDocModal/>
     </div>
   );
 }

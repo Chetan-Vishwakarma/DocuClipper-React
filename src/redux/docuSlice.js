@@ -3,6 +3,7 @@ import { createSlice } from '@reduxjs/toolkit'
 const initialState = {
   docType: 'Bank',
   selectedFiles: {},
+  openDmsDocModal:true
 }
 
 export const docuSlice = createSlice({
@@ -19,10 +20,13 @@ export const docuSlice = createSlice({
       let {id, fileData} = action.payload;
       state.selectedFiles = {...state.selectedFiles,[id]:fileData};
     },
+    setOpenDmsDocModal: (state, action) => {
+      state.openDmsDocModal = action.payload;
+    },
   },
 })
 
 // Action creators are generated for each case reducer function
-export const { setDocType, setSelectedFiles, addInvoices } = docuSlice.actions
+export const { setDocType, setSelectedFiles, addInvoices, setOpenDmsDocModal } = docuSlice.actions
 
 export default docuSlice.reducer
