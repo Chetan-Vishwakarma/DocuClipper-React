@@ -40,8 +40,8 @@ export default function DmsDocModal() {
                         Attachments
                     </Typography>
                     <Grid container spacing={2} marginTop={'2px'} maxHeight={'252px'} overflow={'auto'}>
-                        {Array(9).fill("").map(itm => {
-                            return <Grid item md={4}>
+                        {Array(9).fill("").map((itm,i) => {
+                            return <Grid key={i} item md={4}>
                                 <Stack border={'1px solid grey'} borderRadius={'10px'} padding={'18px 0'} alignItems={'center'} position={'relative'}>
                                     <CloseIcon color='error' sx={{ position: 'absolute', top: 0, right: 0, cursor:'pointer' }}/>
                                     <img src={pdfIcon} height={40} width={40} />
