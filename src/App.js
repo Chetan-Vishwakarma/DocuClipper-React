@@ -24,7 +24,7 @@ function App() {
   return (
     <div>
       <Stack direction="row" spacing={2} sx={{backgroundColor:"#edededc2"}}>
-          <Sidebar width="30%"/>
+          <Sidebar width="26%"/>
           <MainComponent />
       </Stack>
       <DmsDocModal/>

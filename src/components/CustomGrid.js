@@ -42,7 +42,7 @@ const CustomGrid = () => (
     <Column dataField="City" />
     <Column
       dataField="State"
-      groupIndex={0}
+      // groupIndex={0}     
     />
     <Column
       dataField="Position"

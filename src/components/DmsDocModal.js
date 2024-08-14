@@ -11,9 +11,9 @@ import CloseIcon from '@mui/icons-material/Close';
 
 const style = {
     position: 'absolute',
-    top: '30%',
+    top: '0px', // we can replace this with 30%
     left: '50%',
-    transform: 'translate(-50%, -50%)',
+    transform: 'translate(-50%)',  // we can add -50% also to avoid scaling issues
     width: 400,
     bgcolor: 'background.paper',
     borderRadius: '10px',
@@ -40,7 +40,7 @@ export default function DmsDocModal() {
                         Attachments
                     </Typography>
                     <Grid container spacing={2} marginTop={'2px'} maxHeight={'252px'} overflow={'auto'}>
-                        {Array(9).fill("").map((itm,i) => {
+                        {Array(6).fill("").map((itm,i) => {
                             return <Grid key={i} item md={4}>
                                 <Stack border={'1px solid grey'} borderRadius={'10px'} padding={'18px 0'} alignItems={'center'} position={'relative'}>
                                     <CloseIcon color='error' sx={{ position: 'absolute', top: 0, right: 0, cursor:'pointer' }}/>

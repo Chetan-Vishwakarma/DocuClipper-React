@@ -1,3 +1,19 @@
 #gridContainer {
   height: 423px;
 }
+
+/* General scrollbar styles */
+::-webkit-scrollbar {
+  width: 5px; /* Width of the scrollbar */
+}
+
+/* Scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background: #f01c1cd7; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Roundness of the thumb */
+}
+
+/* Scrollbar track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color of the scrollbar track */
+}
